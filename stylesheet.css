@@ -392,10 +392,12 @@ color: gold;
 .res-container {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(100, 100, 100)), url(background-pattern.png);
+  background: linear-gradient(to left, rgba(0,0,0,0));
   text-align: justify;
-  margin: 0.5em;
-  padding: 1em;
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+  border-radius: 5px;
+  padding: 0.5em;
   }
 .res-container a {
   color: white;
@@ -406,58 +408,72 @@ color: gold;
   display: block;
   flex-wrap: wrap;
   width: 300px;
-  height:350px;
-  padding: 0.5em;
-  margin: 1em;
+  height:auto;
+  
+  
   font-size: 18px;
   color: white;
-  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(0, 0, 100)), url(background-pattern.png);
-  box-shadow: 0 0 20px 2px black;
+  background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 100));
+  }
+.res-category p {
+  width: auto;
+  padding: 0.5em;
+  border-bottom: 2px solid white;
+  font-size: 22px;
+  text-align: center;
+  background: rgb(0, 0, 100);
   }
 .res-category ul li {
   padding: 1em;
   margin: 0.5em;
   list-style: none;
-  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(0, 100, 0));
+  background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 100));
   box-shadow: 0 0 20px 2px black;
+
   }
 .res-category ul li:hover {
   background: linear-gradient(360deg, rgba(0,0,0,0.7), rgb(0, 0, 100));
   text-decoration: underline;
+  transform: scale(1.06);
+  transition: 0.8s;
   }
   
 .res-items {
   display: block;
   flex-wrap: wrap;
   position: relative;
-  width: 850px;
+  width: 700px;
   height: auto;
   padding: 0.5em;
-  margin: 0.5em;
-  font-size: 18px;
+  background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 100));
+  font-size: 14px;
   color: white;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgb(0, 0, 100));;
+  border-left: 4px solid white;
+
   
   }
 .items-row {
+
   display: flex;
   flex-wrap: wrap;
   position: relative;
   padding: 0.5em;
   margin: 0.5em;
   align-items: center;
-  
+  background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 100));
   box-shadow: 0 0 20px 2px black;
   }
 .items-column {
-  flex-basis: 45%;
+  flex-basis: 40%;
   margin: 0.5em;
   height: 50px;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
+  border-left: 1px solid white;
   }
 .items-column ul li {
+  width: auto;
   padding: 0.5em;
   margin: 0.5em;
   list-style: none;
