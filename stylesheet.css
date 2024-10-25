@@ -386,3 +386,101 @@ color: gold;
 .cities-container a:hover {
  color: gold;
  }
+ 
+ /*--resource section--*/
+ 
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(100, 100, 100)), url(background-pattern.png);
+  text-align: justify;
+  margin: 0.5em;
+  padding: 1em;
+  }
+.res-container a {
+  color: white;
+  text-decoration: none;
+  }
+
+.res-category {
+  display: block;
+  flex-wrap: wrap;
+  width: 300px;
+  height:350px;
+  padding: 0.5em;
+  margin: 1em;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(0, 0, 100)), url(background-pattern.png);
+  box-shadow: 0 0 20px 2px black;
+  }
+.res-category ul li {
+  padding: 1em;
+  margin: 0.5em;
+  list-style: none;
+  background: linear-gradient(to top, rgba(0,0,0,0.1), rgb(0, 100, 0));
+  box-shadow: 0 0 20px 2px black;
+  }
+.res-category ul li:hover {
+  background: linear-gradient(360deg, rgba(0,0,0,0.7), rgb(0, 0, 100));
+  text-decoration: underline;
+  }
+  
+.res-items {
+  display: block;
+  flex-wrap: wrap;
+  position: relative;
+  width: 850px;
+  height: auto;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgb(0, 0, 100));;
+  
+  }
+.items-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0.5em;
+  margin: 0.5em;
+  align-items: center;
+  
+  box-shadow: 0 0 20px 2px black;
+  }
+.items-column {
+  flex-basis: 45%;
+  margin: 0.5em;
+  height: 50px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  }
+.items-column ul li {
+  padding: 0.5em;
+  margin: 0.5em;
+  list-style: none;
+  } 
+.items-column a{
+  padding: 0.5em; 
+  } 
+.items-column img{
+  width: 40px;
+  height: 40px;
+  
+  }
+.items-row:hover {
+  background: linear-gradient(360deg, rgba(0,0,0,0.7), rgb(0, 0, 100));
+  transform: scale(1.04);
+  transition: 0.9s;
+  }
+.items-row img:hover {
+  color: blue;
+  transform: scale(1.04);
+  }
+.items-row a:hover {
+  color: gold;
+  transform: scale(1.04);
+  }
+  
