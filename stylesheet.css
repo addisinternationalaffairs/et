@@ -36,12 +36,12 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgb(0, 0, 100));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
   background-position: center;
   width: 100%;
   left: 0;
   transition: all 2s ease-in-out;
-  box-shadow: 0 0 20px 5px darkblue;
+  box-shadow: 0 0 20px 5px black;
   z-index: 1;
 }
 
@@ -52,10 +52,13 @@ header {
   top: 0;
   margin-left: 2em;
   }
+.head-title h2 {
+  font-size: 16px;
+}
 .head-container {
-  padding: 1px;
   display: flex;
   flex-wrap: nowrap;
+  padding: 1px;
 }
 
 img {
@@ -69,7 +72,7 @@ img {
   position: relative;
   top: 40%;
   color: white;
-  border: 1px solid black;
+
 }
 @media screen and (max-width: 550px) {
    header{
@@ -142,7 +145,7 @@ img {
 }
 
 .menu-bar ul li:hover {
-  background: rgb(0, 90, 0);
+  background: rgb(0, 100, 100);
   border-radius: 5px;
   transform: scale(1.03);
   transition: all 0.8s ease;
@@ -167,7 +170,7 @@ img {
 .menu-bar ul li:hover .dropdwn-content {
   display: block;
   position: absolute;
-  background: linear-gradient(rgba(0,0,0,0.5), rgb(0, 100, 0));
+  background: linear-gradient(rgba(0,0,0,0.5), rgb(0, 100, 100));
   opacity: 1;
   visibility: visible;
   margin-top: 12px;
@@ -210,10 +213,10 @@ img {
   
   display: block;
   flex-wrap: nowrap;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgb(0, 0, 100)),url("national-theatre.jpg");
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgb(0, 100, 100)),url("national-theatre.jpg");
   background-size: cover;
   background-position: center;
-  padding: 3em;
+  padding: 5em;
   
 }
 
@@ -244,7 +247,6 @@ img {
   margin-bottom: 1em;
   flex-basis: 40%;
   padding: 0.5em;
-
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   }
@@ -296,32 +298,38 @@ img {
 /*--footer section--*/
 
 .footer {
-  width: 100%;
+  width: auto;
   position: absolute;
   bottom: 0;
   margin: 5px 5px 5px 5px;
-}
 
+}
+.footer-container {
+ background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ }
 .row { 
-  width: 100%; 
+  width: auto; 
+  padding: 0.5em;
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+  flex-basis: 50%;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 17px;
   color: white;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 0, 100));
-
+  text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .col {
-  flex-basis: 20%;
-  padding: 5px;
-  margin: 2em 0.5em 0;
+  flex-basis: 25%;
+  margin-top: 1em;
   box-sizing: border-box;
-  
 
+  
 }
 .col a {
   color: white;
@@ -329,17 +337,21 @@ img {
   
 }
 
-.col h3 {
-  width: 100%;
+.col h1 a{
+  width: auto;
   position: relative;
   color: white;
+  font-size: 200%;
   font-weight: bold;
   box-sizing: border-box;
+  
+
 
 }
 .email-id {
-  width: 100%;
+  width: auto;
   margin: 1em 0 1em;
+  color: white;
 }
 
 .col ul li {
@@ -351,6 +363,7 @@ img {
   text-decoration: none;
   color: white;
   box-sizing: border-box;
+
 }
 .col ul li a:hover {
   text-decoration: underline;
@@ -361,16 +374,16 @@ img {
 
 input {
   padding: 0.5em;
-  border-radius: 5px;
+  border-radius: 7px;
   box-sizing: border-box;
 }
 button {
   color: white;
   font-size: 13px;
-  background: rgb(0, 0, 100);
+  background: rgb(0, 100, 100);
   padding: 0.5em;
   margin-left: 0.5em;
-  border-radius: 5px;
+  border-radius: 7px;
 
 }
 
@@ -379,25 +392,23 @@ background: rgb(0, 100, 20);
 cursor: pointer;
 transform: scale(1.04);
 }
-.row-bottom {
-background: linear-gradient(to top, rgba(0,0,0,1), rgb(0, 100, 0));
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-text-align: center;
-}
-.row-bottom p {
-width: 75%;
-margin-left: 12%;
-margin-right: 12%;
+
+.row p {
+width: 70%;
+margin-left: 15%;
+margin-right: 15%;
 color: white;
-padding: 0.5em;
 font-size: 14px;
+padding: 0.5em;
 }
-.row-bottom a {
+
+.row a {
 color: white;
+text-decoration: none;
 }
-.row-bottom a:hover {
+.row a:hover {
 color: gold;
+text-decoration: none;
 }
 
 @media screen and (max-width: 550px) {
@@ -421,7 +432,7 @@ color: gold;
 }
 @media screen and (max-width: 550px) {
   .col input{
-    width: 80%;
+    width: 75%;
     box-sizing: border-box;
     display: flex;
 }
@@ -521,7 +532,7 @@ color: gold;
   border-bottom: 2px solid white;
   font-size: 20px;
   text-align: center;
-  background: rgb(0, 0, 100);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   }
@@ -529,12 +540,12 @@ color: gold;
   padding: 0.5em;
   margin: 0.5em;
   list-style: none;
-  background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 100));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
   box-shadow: 0 0 20px 2px black;
   border-radius: 5px;
   }
 .res-category ul li:hover {
-  background: linear-gradient(360deg, rgba(0,0,0,0.7), rgb(0, 0, 100));
+  background: linear-gradient(360deg, rgba(0,0,0,1), rgb(0, 100, 0));
   text-decoration: underline;
   transform: scale(1.06);
   transition: 0.8s;
@@ -556,7 +567,7 @@ color: gold;
 .res-items p {
   width: auto;
   padding: 0.5em;
-  background: rgb(0, 0, 100);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
   font-size: 20px;
   text-align: center;
   border-top-right-radius: 10px;
@@ -589,9 +600,9 @@ color: gold;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   margin: 1em;
-  background: linear-gradient(50deg, rgba(0,0,0,1), rgb(0, 100, 100));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
 
   border-bottom: 1px solid black;
   border-radius: 5px;
@@ -622,7 +633,6 @@ color: gold;
   flex-wrap: nowrap;
   position: relative;
   width: 300px;
-  
   margin-left: 1em;
   color: white;
   font-size: 20px;
@@ -635,7 +645,7 @@ color: gold;
   width: auto;
   padding: 0.5em;
   text-align: center;
-  background: rgb(0, 0, 100);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 100, 100));
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   }
@@ -645,11 +655,17 @@ color: gold;
     display: flex;
     flex-wrap: nowrap;
     font-size: 12px;
-    align-items: auto;
+    align-self: auto;
 }
 }
 @media screen and (max-width: 600px) {
   .res-items {
     font-size: 12px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .items-row {
+    font-size: 11px;
 }
 }
