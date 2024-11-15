@@ -1,4 +1,6 @@
 
+
+
 var menuBtn = document.getElementById("menuBtn");
 var sideNav = document.getElementById("sideNav");
 var menu = document.getElementById("menu");
@@ -31,3 +33,22 @@ function myFunction() {
       header.classList.remove("sticky");
       }
    }
+   
+var scroller = document.querySelector(".gallery");
+var leftBtn = document.getElementById("leftBtn");
+var rightBtn = document.getElementById("rightBtn");
+
+scroller.addEventListener("wheel", function(evt) {
+   evt.preventDefault();
+   scroller.scrollLeft += evt.deltaY;
+   scroller.style.scrollBehavior = "auto";
+   });
+   
+leftBtn.addEventListener("click", function(evt) {
+   scroller.style.scrollBehavior = "smooth";
+   scroller.scrollLeft += 1100;
+   });
+rightBtn.addEventListener("click", function(evt) {
+   scroller.style.scrollBehavior = "smooth";
+   scroller.scrollLeft += -1100;
+   });
