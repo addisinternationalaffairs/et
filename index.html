@@ -8,12 +8,12 @@
   <link rel="icon" type="image/x-icon" href="x-icon.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="style-bx.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.6.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  
-  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -80,9 +80,9 @@
       </div>
 
       <!--dropdown menu-->
-      <nav class="menu-bar">
+    <nav class="menu-bar menu-bar-1" id="menu-bar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#index">Home</a></li>
           <li><a href="#">Services</a>
              <ul class="dropdwn-content">
                  <li><a href="#">City Twinning</a></li>
@@ -91,13 +91,15 @@
                  <li><a href="#">Knowledge & Technology Transfer</a></li>
             </ul>
           </li>
-          <li><a href="team.html" target="_self">Our Team</a></li>
+          <li><a href="#team-container" id="team">Our Team</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  
+  
   
     <!--news ticker section-->
     
@@ -116,12 +118,69 @@
      </div>
   </section>
   
+    <!--banner section-->
   <section id="banner">
     <div class="banner-title">
       <h1>Welcome to the Department of International Affairs<br>
       information directory</h1>
     </div>
   </section>
+  
+  <!--team section-->
+  <section id="team-container" class="our-team">
+    <div class="row-1">
+      <div class="col-1">
+        <img src="mtt.jpg" alt="Meti">
+        <h5>Meti Tamirat<br><br>Executive Director</h5>
+        
+      </div>
+      <div class="col-1">
+        <p>The director of public and international relations was resposible for all the activities related in relation to
+        city/municipal diplomacy</p>
+      </div>
+    </div>
+    <div class="row-1">
+      <div class="col-1">
+        <img src="henok.jpg" alt="henok">
+        <h5>Henok Teshome<br><br>Team Leader - Internal Affairs</h5>
+
+      </div>
+      <div class="col-1">
+        <p>A highly skilled, dedicated and result oriented foreign relations specialist with a profound professional experience
+        in the field of foreign policy, peace and security, project coordination and community development work. With M.A
+        degree in Diplomacy and International Relations, B.A degree in Sociology and Social Work, Henok is currently serving
+        Office of the Mayor, Addis Ababa City Administration as a senior foreign relations specialist humbly practicing city
+        diplomacy at municipal level. Having spent many years working with various governmental and non-governmental
+        organizations, local and international NGOs, Henok has acquired strong professional experience in the field of foreign
+        policy, peace and security, intelligence service, community development, gender and project coordination.</p>
+        <h3>Contacts</h3>
+        <p>Phone No.: +251-940-80-22-12</p>
+        <p>E-mail: tshmhnk85@yahoo.com</p>
+      </div>
+    </div>
+    <div class="row-1">
+      <div class="col-1">
+        <img src="#" alt="Tigabu">
+        <h5>Tigabu Desalegn<br><br>Team Leader International Relations</h5>
+
+      </div>
+      <div class="col-1">
+        <p>discription about the person in position</p>
+      </div>
+    </div>
+    <div class="row-1">
+      <div class="col-1">
+        <img src="mrt.jpg" alt="Martha">
+        <h5>Martha Gudeta<br><br>Senior Foreign Relations Expert</h5>
+        
+      </div>
+      <div class="col-1">
+        <p>discription about the person in position</p>
+      </div>
+    </div>
+  </section>
+  
+  
   
   <!--slide news section-->
   
@@ -332,6 +391,17 @@
     </div>
   </footer>
   <script src="scripts.js"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#team-container').hide();
+    $("#team").on('click', function() {
+       $('.news-gallery-container,.info-container,#about,#banner').hide();
+       $('#team-container').show();
+       
+   });
+   });
+  </script>
 
 </body>
 </html>

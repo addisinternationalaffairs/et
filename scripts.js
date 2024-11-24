@@ -52,3 +52,9 @@ rightBtn.addEventListener("click", function(evt) {
    scroller.style.scrollBehavior = "smooth";
    scroller.scrollLeft += -1100;
    });
+
+
+$(document).ready(function() {
+   $("#team-container").hide();
+   });
+   
