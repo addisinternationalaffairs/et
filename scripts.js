@@ -34,7 +34,7 @@ function myFunction() {
       }
    }
    
-var scroller = document.querySelector(".gallery");
+var scroller = document.querySelector(".slide-btn");
 var leftBtn = document.getElementById("leftBtn");
 var rightBtn = document.getElementById("rightBtn");
 

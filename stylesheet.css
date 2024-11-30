@@ -1,13 +1,14 @@
 
 /*--team section--*/
 
-*#team-container {
+*.team-container {
   display: inline-block;
   flex-wrap: nowrap;
   padding: 0.5em;
   margin: 0.1em;
   width: auto;
   background:  rgb(235, 245, 255);
+  display: none;
   }
 
 .row-1 {

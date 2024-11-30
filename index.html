@@ -82,7 +82,7 @@
       <!--dropdown menu-->
     <nav class="menu-bar menu-bar-1" id="menu-bar">
         <ul>
-          <li><a href="https://addisinternationalaffairs.github.io/et/">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#">Services</a>
              <ul class="dropdwn-content">
                  <li><a href="#">City Twinning</a></li>
@@ -91,7 +91,7 @@
                  <li><a href="#">Knowledge & Technology Transfer</a></li>
             </ul>
           </li>
-          <li><a href="#/our_team" id="team">Our Team</a></li>
+          <li><a href="#our_team" id="team">Our Team</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
@@ -127,7 +127,7 @@
   </section>
   
   <!--team section-->
-  <section id="team-container" class="our-team">
+  <section class="team-container" id="our_team">
     <div class="row-1">
       <div class="col-1">
         <img src="mtt.jpg" alt="Meti">
@@ -187,9 +187,13 @@
   <section class="news-gallery-container">
      <div class="row-ngc">
         <div class="column-ngc">
-          <p>Latest Updates</p>
+          <div class="slide-btn">
+            <p>Latest Updates</p>
+            <img src="slide-left.png" width="50" height="50" alt="btn" id="leftBtn">
+            <img src="slide-right.png" width="50" height="50" alt="btn" id="rightBtn">
+          </div>
+          
           <div class="gallery-wrap">
-            <img src="left-btn.png" height="64" width="64" alt="btn" id="leftBtn">
               <div class="row-gl">
                 <div class="column-gl">
                   <img src="myr-16.png" height="504" width="656" alt="myr">
@@ -228,21 +232,24 @@
                   <img src="myr-13.png" height="504" width="755" alt="myr">
                 </div>
               </div>
-            <img src="right-btn.png" height="64" width="64" alt="btn" id="rightBtn">
           </div>
        </div>
        <div class="column-ngc">
+          <div class="slide-btn">
           <p>Top Stories</p>
+          <img src="slide-up.png" width="50" height="50" alt="button-up" id="upBtn">
+          <img src="slide-down.png" width="50" height="50" alt="button-down" id="downBtn">
+          </div>
+          
           <div class="news-wrap">
              <div class="news-link">
                <ul>
-                  <li><img src="myr-1.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-3.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-6.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-8.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-10.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-11.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
-                  <li><img src="myr-15.png" alt="news-img"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-1.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-3.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-6.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-8.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-10.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
+                  <li><img src="myr-15.png" alt="myr"><a href="#">November 15 2024 (DIA) - Mayor of Addis Ababa has held fruitful discussion with the director of the World Bank in Ethiopia, Eritrea, Sudan and South Sudan today.</a></li>
                </ul>
              </div>
           </div>     
@@ -360,13 +367,13 @@
         <h3>Links</h3><br>
         <ul>
           <li>
-            <a href="https://addisinternationalaffairs.github.io/et/">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li>
             <a href="#">What We Do</a>
           </li>
           <li>
-            <a href="#">Our Teams</a>
+            <a href="team.html">Our Teams</a>
           </li>
           <li>
             <a href="resources.html">Resources</a>
@@ -392,15 +399,37 @@
   </footer>
   <script src="scripts.js"></script>
   <script src="jquery-3.7.1.min.js"></script>
+  
+    <!--jquery section-->
+    
   <script>
   $(document).ready(function() {
-    $('#team-container').hide();
+    $('.team-container').hide();
     $("#team").on('click', function() {
        $('.news-gallery-container,.info-container,#about,#banner').hide();
-       $('#team-container').show();
+       $('.team-container').show();
        
    });
    });
+   
+  $(document).ready(function() {
+     $('#upBtn').click(function() {
+        $('.news-link li').slideUp();
+        });
+     $('#downBtn').click(function() {
+        $('.news-link li').slideDown();
+        });  
+     });
+     
+  $(document).ready(function() {
+     function slideUp() {
+     $('.news-link').animate({top: '-=500px'},2000,'linear', function() {
+     $(this).css('top', '500px');
+     slideUp();
+     });
+     }
+     slideUp();
+     });
   </script>
 
 </body>
