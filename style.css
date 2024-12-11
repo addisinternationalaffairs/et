@@ -5,16 +5,17 @@
   font-family: "Chakra Petch", sans-serif;
   font-style: normal;
   }
+
 @media screen and (min-width: 320px) and (max-width: 980px) {
   body {
     width: auto;
     height: auto;
-    font-size: 10px;
+    font-size: 11px;
   }
 }  
 
   #sideNav {
-
+  
   width: 200px;
   height: 520px;
   position: absolute;
@@ -101,29 +102,29 @@
   border-radius: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   .banner-title h1 {
     font-size: 24px;
     font-weight: bold;
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   #menuBtn {
     width: 35px;
     height: 35px;
 }
 }
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   #menuBtn img{
     width: 25px;
     height: 25px;
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   #sideNav ul li a{
-    font-size: 13px;
+    font-size: 11px;
 }
 }
 .head-title h2 {
@@ -242,23 +243,20 @@ img {
   text-align: center;
   margin-left: 10em;
   padding: 1em;
-
 }
 
 .menu-bar ul .menu-bar li {
   display: flex;
   flex-wrap: nowrap;
-
-
-  
-}
+  pointer: cursor;
+  }
 .menu-bar ul {
   display: block;
   flex-wrap: nowrap;
   width: 100%;
   list-style: none;
   padding: 0.5em;
-}
+  }
 .menu-bar li {
   position: relative;
   float: left;
@@ -267,7 +265,9 @@ img {
   margin-left: 2em;
   transition: 0.4s all ease-in-out;
   background: white;
+  border-radius: 5px;
   z-index: 1;
+
   }
   
 
@@ -277,13 +277,14 @@ img {
   color: black;
   text-decoration: none;
   text-align: left;
-}
+  }
 
-.menu-bar li:hover {
-  color: black;
-  
-
-}
+.menu-bar li a:hover {
+  color: white;
+  }
+.menu-bar li.active {
+  background: rgb(233, 59, 85); 
+  }
 .menu-bar li::before {
   content: '';
   position: absolute;
@@ -293,7 +294,9 @@ img {
   height: 100%;
   z-index: -1;
   background: rgb(233, 59, 85);
-  transition: 0.4s all ease-in-out;
+  border-radius: 5px;
+  transition: 0.6s all ease-in-out;
+  
   }
 .menu-bar-1 li::before {
   right: unset;

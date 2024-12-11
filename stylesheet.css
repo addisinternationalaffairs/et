@@ -2,7 +2,7 @@
 /*--team section--*/
 
 *.team-container {
-  display: inline-block;
+  display: flex;
   flex-wrap: nowrap;
   padding: 0.5em;
   margin: 0.1em;
@@ -28,16 +28,17 @@
   padding: 0.5em;
   }
 .col-1 img {
+  display: flex;
   width: 350px;
   height: 300px;
-  border-radius: 200px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   }
 .col-1 h5 {
   padding: 0.3em;
   text-align: center;
   font-size: 110%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   }
 .col-1 h3 {
   padding: 0.5em;
@@ -45,25 +46,32 @@
 .col-1 p {
   padding: 0.5em;
   font-size: 16px;
+  text-align: justify;
   }
 .col-1 img:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.06, 1.06);
   transition: all 0.9s ease-in-out;
   }
   
-  @media screen and (max-width: 550px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   .team-container {
-    display: flex;
+    display: block;
     flex-wrap: nowrap;
     font-size: 12px;
-}
-}
-@media screen and (max-width: 550px) {
+    }
   .row-1 {
     display: block;
     flex-wrap: nowrap;
     font-size: 12px;
-}
+    }
+  .col-1 img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    }
+  .col-1 p {
+    font-size: 13px;
+    }
 }
 
 /*--cities section--*/
